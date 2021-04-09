@@ -8,7 +8,11 @@
 @use "abstracts";
 
 // 2. Vendors
-@use "vendors";
+@use "vendors" with (
+    $primary: abstracts.$primary,
+    $custom-switch-indicator-size: abstracts.$custom-switch-indicator-size,
+    $custom-control-indicator-border-width: abstracts.$custom-control-indicator-border-width
+);
 
 // 3. Base stuff
 @use "base";
