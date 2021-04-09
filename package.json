@@ -1,0 +1,95 @@
+{
+  "name": "bootstrap-theme-kit",
+  "version": "0.1.0",
+  "description": "Quickly generate and showcase your bootstrap theme.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "scss-7-in-1": "scss-7-in-1",
+    "gulp": "gulp",
+    "start": "npm run gulp",
+    "build": "npm run gulp build",
+    "eslint": "eslint src/**/*.js src/**/*.html",
+    "prettier": "prettier --check src/**/*.js src/**/*html src/**/*.scss",
+    "stylelint": "stylelint src/**/*.scss --syntax scss",
+    "lint": "npm run eslint && npm run prettier && npm run stylelint",
+    "lint:fix": "npm run eslint -- --fix && npm run prettier -- --write && npm run stylelint -- --fix",
+    "precommit": "npm run lint:fix",
+    "commit": "npx git-cz",
+    "init": "node init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shhdharmen/bootstrap-theme-kit.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "bootstrap4",
+    "bootstrap-themes-generator",
+    "theme-kit",
+    "css",
+    "scss",
+    "scss-7-in-1",
+    "gulp",
+    "livereload",
+    "jquery",
+    "popperjs",
+    "browsersync"
+  ],
+  "author": "Dharmen Shah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shhdharmen/bootstrap-theme-kit/issues"
+  },
+  "homepage": "https://github.com/shhdharmen/bootstrap-theme-kit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/git": "^8.0.0",
+    "browser-sync": "^2.26.7",
+    "cz-conventional-changelog": "^3.1.0",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "npm-check-updates": "^4.0.1",
+    "prettier": "1.19.1",
+    "pump": "^3.0.0",
+    "sass": "^1.26.3",
+    "scss-7-in-1": "^1.1.2",
+    "semantic-release": "^16.0.1",
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-recommended-scss": "^4.1.0",
+    "stylelint-scss": "^3.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
